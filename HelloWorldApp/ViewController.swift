@@ -8,15 +8,18 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+ 
+   @IBOutlet var lblHello: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
 
-
+    @IBAction func changeHello(_ sender: Any) {
+        //코드 작성
+        self.lblHello.text = "Hello Swift!"
+    }
 }
 
