@@ -16,25 +16,48 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hello World !" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LQm-GV-Onp">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Hello World !" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LQm-GV-Onp">
                                 <rect key="frame" x="147" y="360" width="98" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jdg-Xu-wzR">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jdg-Xu-wzR">
                                 <rect key="frame" x="159" y="409" width="75" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
                                     <action selector="changeHello:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CNB-Rf-Aoi"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_0545.JPG" translatesAutoresizingMaskIntoConstraints="NO" id="4DQ-k3-ta5">
+                                <rect key="frame" x="96.666666666666686" y="226" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="EZY-1X-IzJ"/>
+                                    <constraint firstAttribute="width" constant="200" id="tHp-ar-ND3"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4DQ-k3-ta5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="579-mN-FSI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jdg-Xu-wzR" secondAttribute="bottom" constant="374" id="5CT-Ul-1Hj"/>
+                            <constraint firstItem="jdg-Xu-wzR" firstAttribute="top" secondItem="LQm-GV-Onp" secondAttribute="bottom" constant="28" id="5eB-co-omz"/>
+                            <constraint firstItem="4DQ-k3-ta5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-150" id="6p4-Yg-L0N"/>
+                            <constraint firstItem="4DQ-k3-ta5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ACy-hi-y1j"/>
+                            <constraint firstItem="4DQ-k3-ta5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="APQ-os-bov"/>
+                            <constraint firstItem="jdg-Xu-wzR" firstAttribute="centerX" secondItem="4DQ-k3-ta5" secondAttribute="centerX" id="KLG-Gv-iy6"/>
+                            <constraint firstItem="4DQ-k3-ta5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Unn-Z9-d66"/>
+                            <constraint firstItem="4DQ-k3-ta5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gpB-Qz-da5"/>
+                            <constraint firstItem="jdg-Xu-wzR" firstAttribute="centerX" secondItem="LQm-GV-Onp" secondAttribute="centerX" id="hAW-1K-Knb"/>
+                            <constraint firstItem="4DQ-k3-ta5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iYb-el-grI"/>
+                            <constraint firstItem="4DQ-k3-ta5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="o4G-qO-mNO"/>
+                            <constraint firstItem="jdg-Xu-wzR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="tHT-5R-kPY"/>
+                            <constraint firstItem="4DQ-k3-ta5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yme-h2-1Cj"/>
+                            <constraint firstItem="4DQ-k3-ta5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zTs-eI-y2B"/>
+                            <constraint firstItem="4DQ-k3-ta5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zXW-UB-sXH"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="lblHello" destination="LQm-GV-Onp" id="Vc2-2f-IkO"/>
@@ -42,10 +65,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="21" y="4"/>
+            <point key="canvasLocation" x="20.610687022900763" y="3.5211267605633805"/>
         </scene>
     </scenes>
     <resources>
+        <image name="IMG_0545.JPG" width="940" height="638"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
