@@ -10,6 +10,9 @@ import UIKit
 class ViewController: UIViewController {
  
    @IBOutlet var lblHello: UILabel!
+    
+    @IBOutlet var txtName: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -17,9 +20,9 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
 
-    @IBAction func changeHello(_ sender: Any) {
-        //코드 작성
-        self.lblHello.text = "Hello Swift!"
+    @IBAction func changeHello(_ sender: AnyObject) {
+        //수정
+        self.lblHello.text = self.txtName.text! + "님 안녕하세요 "
     }
 }
 
