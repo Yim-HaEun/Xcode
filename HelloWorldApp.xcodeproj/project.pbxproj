@@ -64,10 +64,10 @@
 				015C9B912C88D6E9006E8D67 /* AppDelegate.swift */,
 				015C9B932C88D6E9006E8D67 /* SceneDelegate.swift */,
 				015C9B952C88D6E9006E8D67 /* ViewController.swift */,
+				015C9BA82C8B60BE006E8D67 /* TableViewCell.swift */,
 				015C9B972C88D6E9006E8D67 /* Main.storyboard */,
 				015C9B9A2C88D6EA006E8D67 /* Assets.xcassets */,
 				015C9B9C2C88D6EA006E8D67 /* LaunchScreen.storyboard */,
-				015C9BA82C8B60BE006E8D67 /* TableViewCell.swift */,
 				015C9B9F2C88D6EA006E8D67 /* Info.plist */,
 			);
 			path = HelloWorldApp;
