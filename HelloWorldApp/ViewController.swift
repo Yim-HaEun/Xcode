@@ -47,8 +47,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.didReceiveMemoryWarning()
     }
 
+    @IBAction func clickBtnMove(_ sender: Any) {
+        //코드 작성
+        if let vc = self.storyboard? .instantiateViewController(withIdentifier: "VC2"){
+            vc.modalTransitionStyle = UIModalTransitionStyle.coverVertical
+            self.present(vc,animated:  true, completion: nil)
+        }
+    }
     @IBAction func changeHello(_ sender: AnyObject) {
-        //수정
         self.lblHello.text = self.txtName.text! + "님 안녕하세요 "
     }
 }
