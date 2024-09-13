@@ -111,10 +111,10 @@
             </objects>
             <point key="canvasLocation" x="20.610687022900763" y="3.5211267605633805"/>
         </scene>
-        <!--View Controller-->
+        <!--VC2-->
         <scene sceneID="dok-VL-ANG">
             <objects>
-                <viewController storyboardIdentifier="VC2" id="mog-C3-4XY" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="VC2" id="mog-C3-4XY" customClass="VC2" customModule="HelloWorldApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YhK-pW-Nh1">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -126,6 +126,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fZm-sw-eZM">
+                                <rect key="frame" x="298" y="59" width="83" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="뒤로가기"/>
+                                <connections>
+                                    <action selector="clickBtnBack:" destination="mog-C3-4XY" eventType="touchUpInside" id="rbv-uV-Vm5"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="tfF-Ha-v6w"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
